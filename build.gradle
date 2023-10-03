@@ -1,6 +1,5 @@
 plugins {
-    id "war"
-    id "application"
+    id("war")
     id("com.github.johnrengelman.shadow") version "8.1.1"
     id("io.micronaut.application") version "4.0.4"
     id("io.micronaut.aot") version "4.0.4"
@@ -14,7 +13,7 @@ repositories {
 }
 
 dependencies {
-    developmentOnly("io.micronaut.servlet:micronaut-http-server-jetty:1.0.2")
+  //  developmentOnly("io.micronaut.servlet:micronaut-http-server-jetty:1.0.2")
     implementation("io.micronaut.servlet:micronaut-servlet-engine:1.0.2")
     implementation("io.micronaut:micronaut-http-client")
     annotationProcessor("io.micronaut:micronaut-http-validation")
